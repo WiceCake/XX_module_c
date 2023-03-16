@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController as AdminUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,14 @@ use App\Http\Controllers\AdminController;
 
 
 Route::get('/admin', [AdminController::class, 'index'])->name('login');
+Route::post('/admin', [AdminController::class, 'login']);
+
+Route::middleware('auth:web')->group(function() {
+    Route::get('/admin/logout', [AdminController::class, 'logout'])->name('logout');
+
+    Route::get('/admin/user', [AdminUserController::class, 'index']);
+
+    Route::get('/', function() {
+        return redirect('/admin/user');
+    })->middleware('auth:web');
+});
