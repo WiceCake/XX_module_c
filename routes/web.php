@@ -2,7 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\UserController as AdminUserController;
+use App\Http\Controllers\Admin\UserController as AdminUserController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\User\LockController;
+use App\Http\Controllers\User\UnlockController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +30,9 @@ Route::middleware('auth:web')->group(function() {
     Route::get('/', function() {
         return redirect('/admin/user');
     })->middleware('auth:web');
+
+    Route::resource('user', UserController::class)->parameter('user', 'user:username');
+    Route::resource('user.lock', LockController::class);
+
+    Route::post('/user/{user}/unlock', [UnlockController::class, 'store'])->withTrashed();
 });
