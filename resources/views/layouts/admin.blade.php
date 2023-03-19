@@ -4,13 +4,13 @@
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="{{ url('/admin/user') }}" class="nav-link px-2 text-{{ request()->is('admin/user') ? 'secondary' : 'white' }}">Admin Users</a></li>
-                <li><a href="{{ url('/user') }}" class="nav-link px-2 text-{{ request()->is('user') ? 'secondary' : 'white' }}">Platform Users</a></li>
-                <li><a href="{{ url('/game') }}" class="nav-link px-2 text-{{ request()->is('game') ? 'secondary' : 'white' }}">Games</a></li>
+                <li><a href="{{ url('XX_module_c/admin/user') }}" class="nav-link px-2 text-{{ request()->is('admin/user') ? 'secondary' : 'white' }}">Admin Users</a></li>
+                <li><a href="{{ url('XX_module_c/user') }}" class="nav-link px-2 text-{{ request()->is('user') ? 'secondary' : 'white' }}">Platform Users</a></li>
+                <li><a href="{{ url('XX_module_c/game') }}" class="nav-link px-2 text-{{ request()->is('game') ? 'secondary' : 'white' }}">Games</a></li>
             </ul>
 
             <div class="text-end">
-                <a href="{{ url('/admin/logout') }}" class="btn btn-outline-light me-2">Logout</a>
+                <a href="{{ url('XX_module_c/admin/logout') }}" class="btn btn-outline-light me-2">Logout</a>
             </div>
         </div>
     </div>
