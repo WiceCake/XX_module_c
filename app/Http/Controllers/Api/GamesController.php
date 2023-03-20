@@ -85,13 +85,16 @@ class GamesController extends Controller
         ], 201);
     }
 
-    public function show(Game $game)
+    public function show($slug)
     {
+        $game = Game::where('slug', $slug)->firstOrFail();
         return collect($game)->except(['latest_version', 'game_author']);
     }
 
-    public function update(Request $request, Game $game)
+    public function update(Request $request, $slug)
     {
+        $game = Game::where('slug', $slug)->firstOrFail();
+
         $request->validate([
             'title' => 'min:3|max:60',
             'description' => 'min:0|max:200',
@@ -113,8 +116,10 @@ class GamesController extends Controller
         ]);
     }
 
-    public function destroy(Request $request, Game $game)
+    public function destroy(Request $request, $slug)
     {
+        $game = Game::where('slug', $slug)->firstOrFail();
+
         if ($game->created_by !== $request->user()->id) {
             return response()->json([
                 'status' => 'forbidden',

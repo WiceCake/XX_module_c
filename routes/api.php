@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\Api\Auth\SigninController;
+use App\Http\Controllers\Api\Auth\SignoutController;
+use App\Http\Controllers\Api\Auth\SignupController;
+use App\Http\Controllers\Api\Games\ScoresController;
+use App\Http\Controllers\Api\GamesController;
+use App\Http\Controllers\Api\UsersController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 

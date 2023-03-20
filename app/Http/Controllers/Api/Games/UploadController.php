@@ -12,8 +12,10 @@ use ZipArchive;
 
 class UploadController extends Controller
 {
-    public function store(Game $game, Request $request)
+    public function store($slug, Request $request)
     {
+        $game = Game::where('slug', $slug)->firstOrFail();
+
         $request->validate([
             'zipfile' => 'required|file',
             'token' => 'required',

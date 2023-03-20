@@ -7,10 +7,11 @@ use App\Models\Game;
 use App\Models\Score;
 use Illuminate\Http\Request;
 
-class ScoreController extends Controller
+class ScoresController extends Controller
 {
-    public function index(Game $game)
+    public function index($slug)
     {
+        $game = Game::where('slug', $slug)->firstOrFail();
         if ($game->trashed()) {
             return response()->json([
                 'status' => 'not-found',
@@ -47,8 +48,10 @@ class ScoreController extends Controller
         ];
     }
 
-    public function store(Game $game, Request $request)
+    public function store($slug, Request $request)
     {
+        $game = Game::where('slug', $slug)->firstOrFail();
+
         $request->validate([
             'score' => 'required',
         ]);

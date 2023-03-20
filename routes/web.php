@@ -8,6 +8,7 @@ use App\Http\Controllers\ScoreController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\User\LockController;
 use App\Http\Controllers\User\UnlockController;
+use App\Http\Controllers\Api\Games\UploadController;
 use Illuminate\Support\Facades\Route;
 
 /*
