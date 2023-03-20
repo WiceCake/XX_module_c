@@ -1,5 +1,7 @@
 <?php
 
+// Added passport for postman authentication
+
 namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;

@@ -1,5 +1,7 @@
 <?php
 
+// Initialize the needed method and variables to query in database table games
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;

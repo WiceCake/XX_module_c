@@ -1,3 +1,5 @@
+{{-- html code for overall layout in admin --}}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

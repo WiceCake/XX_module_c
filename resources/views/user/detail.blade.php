@@ -2,6 +2,8 @@
 @section('title', 'User - '.$user->username)
 @section('main')
 
+{{-- Shows specific details for platform users and developers --}}
+
 <h3>History</h3>
 <table class="table table-striped">
     <tr>

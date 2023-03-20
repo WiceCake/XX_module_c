@@ -1,6 +1,9 @@
 @extends('layouts.admin')
 @section('title', 'Admin Users')
 @section('main')
+
+{{-- Shows admin users --}}
+
 <table class="table table-striped">
     <thead>
         <tr>

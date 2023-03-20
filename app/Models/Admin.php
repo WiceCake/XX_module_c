@@ -1,5 +1,7 @@
 <?php
 
+// Added import for authentication in admin login
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;

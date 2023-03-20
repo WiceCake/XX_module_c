@@ -1,5 +1,7 @@
 <?php
 
+// Controller for platform user and developer account signing in
+
 namespace App\Http\Controllers\Api\Auth;
 
 use App\Http\Controllers\Controller;

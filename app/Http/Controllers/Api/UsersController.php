@@ -1,5 +1,7 @@
 <?php
 
+// Controller for showing platform user and developer details in game server
+
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;

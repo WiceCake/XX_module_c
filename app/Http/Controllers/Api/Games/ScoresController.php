@@ -1,5 +1,7 @@
 <?php
 
+// Controller for finding and showing game scores to platform user and developers
+
 namespace App\Http\Controllers\Api\Games;
 
 use App\Http\Controllers\Controller;

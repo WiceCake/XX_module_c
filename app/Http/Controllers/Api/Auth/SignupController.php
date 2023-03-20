@@ -1,5 +1,7 @@
 <?php
 
+// Controller for creating a platform user and developer account
+
 namespace App\Http\Controllers\Api\Auth;
 
 use App\Http\Controllers\Controller;

@@ -1,5 +1,7 @@
 <?php
 
+// Controller for game assets in storage
+
 namespace App\Http\Controllers\Game;
 
 use App\Http\Controllers\Controller;

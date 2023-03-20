@@ -1,5 +1,8 @@
 <?php
 
+// Controller for developer games in deleting, updating, and his/her game.
+// Controller for platform user showing existing games in the server
+
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;

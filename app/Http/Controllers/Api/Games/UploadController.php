@@ -1,5 +1,7 @@
 <?php
 
+// Controller for uploading new game for game developers
+
 namespace App\Http\Controllers\Api\Games;
 
 use App\Http\Controllers\Controller;

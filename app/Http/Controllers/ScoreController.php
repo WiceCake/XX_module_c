@@ -1,5 +1,7 @@
 <?php
 
+// Controller for deleting information about games or scores
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;

@@ -1,5 +1,7 @@
 <?php
 
+// Create Table for Game Versions
+
 use App\Models\Game;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;

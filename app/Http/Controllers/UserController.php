@@ -1,5 +1,7 @@
 <?php
 
+// Controller for platform user page and data about users table
+
 namespace App\Http\Controllers;
 
 use App\Models\User;

@@ -35,6 +35,8 @@ return [
     |
     */
 
+    // Changes in backend authentication to admin and give access to api authentication
+
     'guards' => [
         'web' => [
             'driver' => 'session',

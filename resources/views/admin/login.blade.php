@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('title', 'Admin login')
 @section('content')
+
+{{-- Login page for backend server --}}
+
 <div class="w-100 vh-100 d-flex align-items-center justify-content-center">
     <main style="width: 400px" class="border rounded p-5">
         <form method="POST" action="">

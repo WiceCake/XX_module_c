@@ -1,5 +1,7 @@
 <?php
 
+// Controller for showing information about admin users
+
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;

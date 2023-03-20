@@ -66,6 +66,8 @@ return [
     |
     */
 
+    // Added Game Path Assets to have pulic access
+
     'links' => [
         public_path('storage') => storage_path('app/public'),
         public_path('games') => storage_path('app/games'),

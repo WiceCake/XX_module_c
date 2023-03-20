@@ -1,5 +1,7 @@
 <?php
 
+// Call all seeder class to execute db:seed in one go
+
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;

@@ -1,6 +1,9 @@
 @extends('layouts.admin')
 @section('title', 'Platform Users')
 @section('main')
+
+{{-- Shows table for platform users and developers --}}
+
 <table class="table table-striped">
     <thead>
         <tr>

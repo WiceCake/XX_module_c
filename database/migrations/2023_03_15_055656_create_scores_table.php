@@ -1,5 +1,7 @@
 <?php
 
+// Create Table for User and Dev Scores in Games
+
 use App\Models\User;
 use App\Models\GameVersion;
 use Illuminate\Database\Migrations\Migration;

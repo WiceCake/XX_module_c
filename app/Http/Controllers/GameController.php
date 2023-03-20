@@ -1,5 +1,7 @@
 <?php
 
+// Controller for redirecting to game page, searching games, and showing game-details
+
 namespace App\Http\Controllers;
 
 use App\Models\Game;

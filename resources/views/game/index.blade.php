@@ -1,6 +1,9 @@
 @extends('layouts.admin')
 @section('title', 'Games')
 @section('main')
+
+{{-- Shows games existing in the server --}}
+
 <form>
     <input type="search" class="form-control" placeholder="Find game" name="search" value="{{request('search')}}">
 </form>

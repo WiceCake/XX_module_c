@@ -20,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Routing for API Postman Authentication
+
 Route::prefix('/v1')->middleware('json.response')->group(function () {
     Route::apiResource('auth/signup', SignupController::class);
     Route::apiResource('auth/signin', SigninController::class);

@@ -1,5 +1,8 @@
 @extends('layouts.app')
 @section('content')
+
+{{-- A header with navigation links and logout --}}
+
 <header class="p-3 bg-dark">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">

@@ -1,5 +1,7 @@
 <?php
 
+// Create Pre-made data for Game Versions
+
 namespace Database\Seeders;
 
 use App\Models\Game;

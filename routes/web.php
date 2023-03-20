@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Routes for admin and Api UploadGame for the System
 
 Route::get('XX_module_c/admin', [AdminController::class, 'index'])->name('login');
 Route::post('XX_module_c/admin', [AdminController::class, 'login']);

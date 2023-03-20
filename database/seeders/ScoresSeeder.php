@@ -1,5 +1,7 @@
 <?php
 
+// Create Pre-made data for Scores of Platform User and Developer
+
 namespace Database\Seeders;
 
 use App\Models\Game;

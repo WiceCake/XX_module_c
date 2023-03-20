@@ -1,5 +1,7 @@
 <?php
 
+// Create Pre-made data for Platform Users
+
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;

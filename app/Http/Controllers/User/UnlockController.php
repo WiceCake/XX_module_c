@@ -1,5 +1,7 @@
 <?php
 
+// Controller for locking platform user and developers unlocking
+
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;

@@ -1,5 +1,7 @@
 <?php
 
+// Controller for admin authentication and redirecting to admin page
+
 namespace App\Http\Controllers;
 
 use App\Models\Admin;

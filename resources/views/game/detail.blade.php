@@ -2,6 +2,8 @@
 @section('title', 'Game - '.$game->title)
 @section('main')
 
+{{-- Shows games details --}}
+
 <div class="row">
     <div class="col">
         <table class="table table-striped">
